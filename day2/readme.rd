@@ -24,8 +24,8 @@ db.tblNhanVien.insertOne(
     {
         "maso": "nv01",
         "ten": "An",
-        "tuoi": "27",
-        "gioitinh": True,
+        "tuoi": 27,
+        "gioitinh": true,
         "luong": 250.5
     }
 )
@@ -36,14 +36,14 @@ db.tblNhanVien.insertMany(
         {
             "maso": "nv02",
             "ten": "Lan",
-            "tuoi": "32",
+            "tuoi": 32,
             "gioitinh": false,
             "luong": 350.5
         },
         {
             "maso": "nv03",
             "ten": "Tung",
-            "tuoi": "28",
+            "tuoi": 28,
             "gioitinh": true,
             "luong": 400
         }
@@ -56,8 +56,8 @@ db.tblNhanVien.insertOne(
     {
         "maso": "nv05",
         "ten": "Long",
-        "tuoi": "27",
-        "gioitinh": "true",
+        "tuoi": 27,
+        "gioitinh": true,
         "luong": 250.5,
         "chucvu": "quanly"
     }
@@ -67,8 +67,8 @@ db.tblNhanVien.insertOne(
     {
         "maso": "nv06",
         "ten": "Hue",
-        "tuoi": "27",
-        "gioitinh": "false",
+        "tuoi": 27,
+        "gioitinh": false,
         "luong": 250.5,
         "chucvu": "Sale",
         "giadinh": {
@@ -82,8 +82,8 @@ db.tblNhanVien.insertOne(
     {
         "maso": "nv07",
         "ten": "Tan",
-        "tuoi": "27",
-        "gioitinh": "true",
+        "tuoi": 27,
+        "gioitinh": true,
         "luong": 3000,
         "chucvu": "DEV",
         "job": [
