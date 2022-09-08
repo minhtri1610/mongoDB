@@ -1,0 +1,54 @@
+[
+    {
+        "pid": "p01",
+        "name": "pepsi",
+        "price": 5.5,
+        "quantity": 20,
+        "category": [
+            {
+                "cid":  "c1",
+                "cname": "drink",
+                "unit": "bottle"
+            }
+        ]
+    },
+    {
+        "pid": "p02",
+        "name": "coca",
+        "price": 4.9,
+        "quantity": 50,
+        "category": [
+            {
+                "cid":  "c1",
+                "cname": "drink",
+                "unit": "bottle"
+            }
+        ]
+    },
+    {
+        "pid": "p03",
+        "name": "rice",
+        "price": 7.5,
+        "quantity": 100,
+        "category": [
+            {
+                "cid":  "c2",
+                "cname": "food",
+                "unit": "kg"
+            }
+        ]
+    },
+    {
+        "pid": "p04",
+        "name": "fish",
+        "price": 9.0,
+        "quantity": 75,
+        "category": [
+            {
+                "cid":  "c2",
+                "cname": "food",
+                "unit": "kg"
+            }
+        ]
+    }
+]

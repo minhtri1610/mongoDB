@@ -1,0 +1,30 @@
+[
+    {
+        "sid": "S001",
+        "sname": "Petter",
+        "address": [
+            {
+                "addid": "AD01",
+                "adname": "TPHCM"
+            },
+            {
+                "addid": "AD02",
+                "adname": "Tay Ninh"
+            }
+        ]
+    },
+    {
+        "sid": "S002",
+        "sname": "Herry",
+        "address": [
+            {
+                "addid": "AD03",
+                "adname": "Hue"
+            },
+            {
+                "addid": "AD04",
+                "adname": "Da Nang"
+            }
+        ]
+    }
+]

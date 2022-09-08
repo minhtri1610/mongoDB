@@ -1,0 +1,19 @@
+[
+    {
+        "sid": "S001",
+        "sname": "Petter",
+        "address": [
+            {"_id": "6319dd9f884e740c557650fc"},
+            {"_id": "6319dd9f884e740c557650fd"}
+        ]
+        
+    },
+    {
+        "sid": "S002",
+        "sname": "Herry",
+        "address": [
+            {"_id": "6319dd9f884e740c557650ff"},
+            {"_id": "6319dd9f884e740c557650fc"}
+        ]
+    }
+]

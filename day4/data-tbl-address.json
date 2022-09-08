@@ -1,0 +1,32 @@
+[
+    {
+        "adid": "AD01",
+        "address": "HCM"
+        
+    },
+    {
+        "adid": "AD02",
+        "address": "HN"
+    },
+    {
+        "adid": "AD03",
+        "address": "HP"
+    },
+    {
+        "adid": "AD04",
+        "address": "HUE"
+    },
+    {
+        "adid": "AD05",
+        "address": "PHU QUOC"
+    },
+    {
+        "adid": "AD06",
+        "address": "DA NANG"
+    },
+    {
+        "adid": "AD07",
+        "address": "BINH DINH"
+    }
+
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "sid": "S001",
+        "sname": "Petter",
+        "address": [
+            {
+                "adname": "TPHCM"
+            },
+            {
+                "adname": "HN"
+            }
+        ]
+    },
+    {
+        "sid": "S002",
+        "sname": "Herry",
+        "address": [
+            {
+                "adname": "Hue"
+            },
+            {
+                "adname": "HP"
+            }
+        ]
+    }
+]
