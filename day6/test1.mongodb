@@ -1,0 +1,59 @@
+use('restaurantdb')
+//lay danh sach 5 nha hang
+db.tblrestaurant.find().pretty().limit(5);
+
+//lay danh sach ma nha hang, thi tran, ten, chuyen mon am thuc
+db.tblrestaurant.find({},{'borough': 1, 'name': 1, 'cuisine': 1, 'restaurant_id': 1}).limit(5)
+
+//Lay danh sach nha hang o thi xa Brooklyn
+db.tblrestaurant.find({'borough': "Brooklyn"})
+
+//Lay danh sach nha hang o thi xa Brooklyn sau khi bo qua 7 cai dau tien
+db.tblrestaurant.find({'borough': "Brooklyn"}, {'name': 1, '_id': 0}).skip(7).limit(5)
+
+//TIm nhung nha hang co diem danh gia lon hon 90
+db.tblrestaurant.find({grades: {
+    $elemMatch:{
+        'score': {
+            $gt: 90
+        }
+    }
+}})
+
+//TIm nhung nha hang co diem danh gia lon hon 80 nhung nho hon 100
+db.tblrestaurant.find({grades: {
+    $elemMatch:{
+        'score': {
+            $gt: 80,
+            $lt: 100
+        }
+    }
+}})
+
+//Tim nhung nha hang o vij tri co vi do nho hon -95.75
+db.tblrestaurant.find({
+        "address.coord[0]":{
+            $lt: -95.75
+        }
+    })
+
+//TIm nhung nha hang co score lon hon 70 va am thuc khong phuc vu kieu my
+db.tblrestaurant.find({
+    $and:[
+        {
+            cuisine : {
+                $ne: "American "
+            }
+        },
+        {
+            "grades.score": {
+                $gt: 70
+            },
+            "grades.score": {
+                $lt: 100
+            }
+        }
+    ]
+}, {name:1, cuisine: 1})
+
+//Tim nhung nha hang khong phuc vu am thuc my va dc danh gia hang A vaf ko o thi xa Brooklyn va sap xep giam dan theo am thuc
